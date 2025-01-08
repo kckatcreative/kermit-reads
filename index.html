@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const autocompleteContainer = document.getElementById('autocomplete-container');
     const coverImageDiv = document.getElementById('cover-image');
     let debounceTimeout;
+    const apiKey = process.env.API_KEY;
 
     searchInput.addEventListener('input', function() {
         const query = searchInput.value.trim();
