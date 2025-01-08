@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Debounce: Only proceed after 300ms of no input
         debounceTimeout = setTimeout(() => {
             if (query.length > 2) {
-                fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=API_KEY`)
+                fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyDMA85W_beUmMe6rSjsZrN4QWq2wJtSveI`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error(`API error: ${response.status}`);
