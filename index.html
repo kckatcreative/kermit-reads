@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const autocompleteContainer = document.getElementById('autocomplete-container');
     const coverImageDiv = document.getElementById('cover-image');
     let debounceTimeout;
-    const apiKey = process.env.API_KEY;
 
     searchInput.addEventListener('input', function() {
         const query = searchInput.value.trim();
@@ -96,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Debounce: Only proceed after 300ms of no input
         debounceTimeout = setTimeout(() => {
             if (query.length > 2) {
-                fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}`)
+                fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyDZlW92b49saGIL0zTKkh1qGD3ekp1ynfw`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error(`API error: ${response.status}`);
