@@ -65,6 +65,13 @@
   <script src="js/webflow.js" type="text/javascript"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("form").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+      });
+    });
+  
     const searchInput = document.getElementById('book-search');
     const autocompleteContainer = document.getElementById('autocomplete-container');
     const coverImageDiv = document.getElementById('cover-image');
