@@ -59,6 +59,7 @@
 
 .book-img {
   aspect-ratio: 2 / 3;
+  width: 45px;
   object-fit: cover;
   width: 100%;
 }
