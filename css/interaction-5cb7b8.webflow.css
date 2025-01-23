@@ -59,13 +59,16 @@
 
 .book-img {
   aspect-ratio: 2 / 3;
-  width: 45px;
   object-fit: cover;
   width: 100%;
 }
 
 .autocomplete-suggestions {
   width: 100%;
+}
+
+.autocomplete-book {
+  width: 50px;
 }
 
 .select-field {
