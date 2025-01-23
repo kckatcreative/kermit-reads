@@ -65,6 +65,8 @@
 
 .autocomplete-suggestions {
   width: 100%;
+  box-shadow: 0 2px 8px #0000001a;
+  background-color: #f8f9fa;
 }
 
 .autocomplete-book {
